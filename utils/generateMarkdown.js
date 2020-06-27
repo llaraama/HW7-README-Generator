@@ -2,13 +2,7 @@
 function generateMarkdown(answers) {
   return `# ${answers.title}
 
-  ## User Info
-  Username:${answers.username}
-  User Email:${answers.email}
-
-
   ## Table of Contents:
-  *[User Info](#UserInfo)
   *[Description](#Description)
   *[Installation](#Installation)
   *[Usage](#Usage)
@@ -32,6 +26,9 @@ function generateMarkdown(answers) {
   ## Tests:
       ${answers.tests}
   ##Questions:
+  GitHub Username:${answers.username}
+  User Email:${answers.email}
+
 
 
 `;
