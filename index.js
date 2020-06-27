@@ -13,7 +13,11 @@ const writeFileSync=util.promisify(fs.writeFile);
 // ];
 function promptQuestions(){
 return inquirer.prompt([
-
+    {
+        type: "input",
+        name: "username",
+        message: "What is your GitHub username ?"
+    },
     {
         type: "input",
         name: "email",
