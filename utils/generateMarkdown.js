@@ -2,13 +2,20 @@
 function generateMarkdown(answers) {
   return `# ${answers.title}
 
+
   ## Table of Contents:
   *[Description](#Description)
+
   *[Installation](#Installation)
+
   *[Usage](#Usage)
+
   *[License](#License)
+
   *[Contributing](#Contributing)
+
   *[Tests](#Tests)
+
   *[Questions](#Questions)
 
   
@@ -17,15 +24,20 @@ function generateMarkdown(answers) {
 
   ## Installation:
       ${answers.installation}
+
   ## Usage:
       ${answers.description}
+
   ## License:
       ${answers.license}
+
   ## Contributing:
       ${answers.contributors}
+
   ## Tests:
       ${answers.tests}
-  ##Questions:
+      
+  ## Questions:
   GitHub Username:${answers.username}
   User Email:${answers.email}
 
