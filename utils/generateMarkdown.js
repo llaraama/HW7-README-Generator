@@ -1,3 +1,4 @@
+// function to generate markdown or README
 function generateMarkdown(answers) {
   return `# ${answers.title}
 
@@ -5,6 +6,14 @@ function generateMarkdown(answers) {
       ${answers.description}
 
   ## Table of Contents:
+  *[User Info]
+  *[Installation](#Installation)
+  *[Usage]
+  *[License]
+  *[Contributing]
+  *[Tests]
+  *[Questions]
+
 
   ## Installation:
       ${answers.installation}
@@ -21,3 +30,5 @@ function generateMarkdown(answers) {
 
 `;
 }
+
+module.exports = generateMarkdown;

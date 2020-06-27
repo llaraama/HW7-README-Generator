@@ -5,6 +5,14 @@ function generateMarkdown(answers) {
       ${answers.description}
 
   ## Table of Contents:
+  *[User Info]
+  *[Installation](#Installation)
+  *[Usage]
+  *[License]
+  *[Contributing]
+  *[Tests]
+  *[Questions]
+
 
   ## Installation:
       ${answers.installation}
