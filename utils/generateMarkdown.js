@@ -1,22 +1,25 @@
 // function to generate markdown or README
 function generateMarkdown(answers) {
-  return `# ${answers.title}
+  return `
+  
+  # ${answers.title.toUpperCase()}
+  ![badmath](https://img.shields.io/github/languages/top/llaraama/HW7-README-Generator)
 
 
   ## Table of Contents:
-  *[Description](#Description)
+  * [Description](#Description)
 
-  *[Installation](#Installation)
+  * [Installation](#Installation)
 
-  *[Usage](#Usage)
+  * [Usage](#Usage)
 
-  *[License](#License)
+  * [License](#License)
 
-  *[Contributing](#Contributing)
+  * [Contributing](#Contributing)
 
-  *[Tests](#Tests)
+  * [Tests](#Tests)
 
-  *[Questions](#Questions)
+  * [Questions](#Questions)
 
   
   ## Description: 
@@ -36,10 +39,11 @@ function generateMarkdown(answers) {
 
   ## Tests:
       ${answers.tests}
-      
+
   ## Questions:
-  GitHub Username:${answers.username}
   User Email:${answers.email}
+
+  GitHub Username:[${answers.username}](https://github.com/${answers.username})
 
 
 

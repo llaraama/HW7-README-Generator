@@ -1,16 +1,12 @@
 
 const fs = require("fs");
-const axios =require("axios");
 const inquirer = require("inquirer");
 const util= require("util");
-const generateMarkdown = require("./utils/generateMarkdown.js");
+const generateMarkdown=require("./utils/generateMarkdown.js")
 
-// array of questions for user
-// const questions = [
     
-const writeFileSync=util.promisify(fs.writeFile);
+const writeFileAsync=util.promisify(fs.writeFile);
 
-// ];
 function promptQuestions(){
 return inquirer.prompt([
     {
@@ -58,10 +54,7 @@ return inquirer.prompt([
       message: "License type ?",
       name: "license",
       choices: [
-        "MIT", 
-        "CSS", 
-        "JavaScript", 
-        "MySQL"
+        'Apache License 2.0', 'GNU LGPLv3', 'GNU AGPLv3', 'MIT License'
       ]
     }
     
@@ -69,51 +62,18 @@ return inquirer.prompt([
  
 ]);
 }
-//     // after getting data from User, Make API Call
-// })
-
-// var fileName=data.name.toLowerCase()+".md"
 
 
 
-// function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeFileSync(fileName, data, function(err, data) {
-//         if(err) {
-//             console.log(err);
-//         }
-//         console.log(data);
-//     });
-// });
+promptQuestions()
+  .then(answers=> {
+    const readMe = generateMarkdown(answers);
 
-// function to initialize program
-async function init() {
-    try{
-        const answers= await promptQuestions();
-
-        const { username }=await inquirer.prompt({
-            
-                type: "input",
-                name: "username",
-                message: "What is your GitHub username ?"
-              
-        });
-        // const { datas }= await axios.get(
-        //     `https://api.github.com/users/${username}` 
-        // );
-        // console.log(datas)
-
-        // const readmeCreation=generateMarkdown();
-
-        await writeFileSync('./utils/README.md',generateMarkdown);
-
-       
-
-    }catch(err){
-        console.log(err);
-    }
-
-}
-
-// function call to initialize program
-init();
+    return writeFileAsync("./utils/README.md", readMe);
+  })
+  .then(function() {
+    console.log("Successfully wrote to readMe.md");
+  })
+  .catch(err=> {
+    console.log(err);
+  });
