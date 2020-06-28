@@ -3,7 +3,7 @@ function generateMarkdown(answers) {
   return `
   
   # ${answers.title.toUpperCase()}
-  ![badmath](https://img.shields.io/github/languages/top/llaraama/HW7-README-Generator)
+  ![badmath](https://img.shields.io/github/languages/top/${answers.username}/${answers.title})
 
 
   ## Table of Contents:
