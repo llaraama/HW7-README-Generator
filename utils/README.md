@@ -43,7 +43,5 @@
 
   GitHub Username:[llaraama](https://github.com/llaraama)
 
-  video:(https://drive.google.com/file/d/1iBOal1xAHVC5JulGyupDGYq35M6qHlKD/view)
-
 
 
