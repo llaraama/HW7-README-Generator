@@ -1,10 +1,8 @@
-
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util= require("util");
 const generateMarkdown=require("./utils/generateMarkdown.js")
 
-    
 const writeFileAsync=util.promisify(fs.writeFile);
 
 function promptQuestions(){
@@ -57,13 +55,8 @@ return inquirer.prompt([
         'Apache License 2.0', 'GNU LGPLv3', 'GNU AGPLv3', 'MIT License'
       ]
     }
-    
-
- 
 ]);
 }
-
-
 
 promptQuestions()
   .then(answers=> {
