@@ -1,4 +1,5 @@
 # README-Generator
+
 ![badmath](https://img.shields.io/github/languages/top/llaraama/README-Generator)
 
  ## Table of Contents:
@@ -27,7 +28,8 @@ A developer that seeking a more efficient way to create their readMe pages
 Clone this repo to your local machine using: https://github.com/llaraama/README-Generator.git
 
 ## Usage
-Functionality video:https://drive.google.com/file/d/1iBOal1xAHVC5JulGyupDGYq35M6qHlKD/view
+Functionality video:
+https://drive.google.com/file/d/1iBOal1xAHVC5JulGyupDGYq35M6qHlKD/view
 
 ## License
 MIT License
