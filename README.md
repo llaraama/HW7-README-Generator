@@ -26,9 +26,8 @@ A developer that seeking a more efficient way to create their readMe pages
 ## Installation
 Clone this repo to your local machine using: https://github.com/llaraama/README-Generator.git
 
-
 ## Usage
-Functionality video:(https://drive.google.com/file/d/1iBOal1xAHVC5JulGyupDGYq35M6qHlKD/view)
+Functionality video:https://drive.google.com/file/d/1iBOal1xAHVC5JulGyupDGYq35M6qHlKD/view
 
 ## License
 MIT License
@@ -84,6 +83,3 @@ Fork this repository. Create a branch: git checkout -b <branch_name>. Add: git a
     * Fetch API
 
     * Axios
- 
-
-
