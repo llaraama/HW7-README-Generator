@@ -39,23 +39,16 @@ Fork this repository. Create a branch: git checkout -b <branch_name>. Add: git a
 
 ## Technology 
 * Node.js
-
     * process.argv
-
     * fs
 
 * Modularization
-
     * require
-
     * module.exports
-
+    
 * npm
-
     * package.json
-
     * npm init
-
     * node_modules
 
 * Inquirer
@@ -63,25 +56,15 @@ Fork this repository. Create a branch: git checkout -b <branch_name>. Add: git a
 * ES6
 
     * let and const
-
     * Arrow functions
-
     * Template literals
-
     * Array methods (map, filter, reduce)
-
     * Spread and rest
-
     * Destructuring arrays and objects
 
 * Asynchronous JavaScript
-
     * Callbacks
-
     * Promises
-
     * Async/await
-
     * Fetch API
-
     * Axios
