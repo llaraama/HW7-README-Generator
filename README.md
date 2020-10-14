@@ -54,7 +54,6 @@ Fork this repository. Create a branch: git checkout -b <branch_name>. Add: git a
 * Inquirer
 
 * ES6
-
     * let and const
     * Arrow functions
     * Template literals
