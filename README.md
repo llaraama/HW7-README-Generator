@@ -84,6 +84,3 @@ Fork this repository. Create a branch: git checkout -b <branch_name>. Add: git a
     * Fetch API
 
     * Axios
- 
-
-
